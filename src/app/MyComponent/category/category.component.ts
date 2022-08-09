@@ -11,5 +11,18 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  productSelected:boolean=false;
+  selectedCategory:any;
+  addSelected:boolean=false;
+
+  onCategorySelected(product:any){
+    this.productSelected=true;
+    this.selectedCategory=product;
+  }
+
+  onAddCart(){
+    this.addSelected=this.selectedCategory;
+  }
+
 
 }

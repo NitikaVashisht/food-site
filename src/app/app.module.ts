@@ -8,9 +8,12 @@ import { BannerComponent } from './MyComponent/banner/banner.component';
 import { ContactComponent } from './MyComponent/contact/contact.component';
 import { CategoryComponent } from './MyComponent/category/category.component';
 import { ListComponent } from './MyComponent/list/list.component';
+import { HomeComponent } from './MyComponent/home/home.component';
 
 
 const appRoutes: Routes=[
+  {path:'', component: HomeComponent},
+  {path:'home', component: HomeComponent},
   {path:'contact', component: ContactComponent}
   
 
@@ -29,6 +32,7 @@ const appRoutes: Routes=[
     BannerComponent,
     ContactComponent,
     CategoryComponent,
+    HomeComponent,
     ListComponent
   ],
   imports: [
